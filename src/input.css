@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    background-image: url("/src/img/bg-web.svg");
+    background-repeat: no-repeat;
+    background-position-y: 0px;
+    background-position-x: 0px;
+    background-size: 100%;
+}
+
+#started .container{
+    background: linear-gradient(279.56deg, rgba(113, 255, 255, 0.33) 9.13%, rgba(122, 121, 225, 0.58) 74.31%);
+}
+
+@media only screen and (max-width: 600px) {
+    body{
+        background-size: 110%;
+    }
+  }
