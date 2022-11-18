@@ -8,6 +8,9 @@
     <title>Tugas Alkademi</title>
 
     <link href="/dist/output.css" rel="stylesheet">
+
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body class="bg-[#000235] text-[#F8F0F0]">
@@ -56,8 +59,8 @@
                 <h1 class="text-[87px] leading-[87px] mb-[14px] font-bold">
                     Discover And Collect Rare NFTs
                 </h1>
-                <p class="text-lg font-normal mb-[42px]">
-                    The most secure marketplace for buying and selling unique crypto assets.
+                <p class="lead text-lg font-normal mb-[42px]">
+                    <br><br><br>
                 </p>
                 <div class="flex lg:justify-start justify-center">
                     <button
@@ -71,7 +74,8 @@
             </div>
             <div class="lg:w-auto w-full justi">
                 <img src="img/landing.png" alt="landing"
-                    class="transition hover:-translate-y-1 lg:hover:scale-125 hover:scale-110 duration-150">
+                    class="transition hover:-translate-y-1 lg:hover:scale-125 hover:scale-110 duration-150"
+                    data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1500">
             </div>
         </div>
     </section>
@@ -247,6 +251,42 @@
 
 
     <script src="/node_modules/flowbite/dist/flowbite.js"></script>
+
+    <!-- AOS Scroll Script -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- Gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/TextPlugin.min.js"></script>
+    <script>
+        gsap.registerPlugin(TextPlugin);
+        gsap.to('.lead', {
+            duration: 3,
+            delay: 0,
+            text: 'The most secure marketplace for buying and selling unique crypto assets.'
+        });
+        // gsap.to('.lead2', {
+        //     duration: 2.5,
+        //     delay: 2.2,
+        //     text: 'Welcome to my personal website, wanna discuss about something?'
+        // });
+        // gsap.from('.jumbotron img', {
+        //     duration: 2,
+        //     y: 50,
+        //     opacity: 0,
+        //     ease: 'expo.out'
+        // });
+        // gsap.from('.btn1', {
+        //     duration: 1,
+        //     delay: 4.5,
+        //     y: -100,
+        //     opacity: 0
+        // });
+        //gsap.from('.navbar', { duration: 1.5, y: -100, opacity: 0, ease: 'bounce' });
+    </script>
 </body>
 
 </html>
